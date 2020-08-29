@@ -81,6 +81,7 @@ if isDecode.casefold() == "d":
     else:
         #I found this bit of code at https://stackoverflow.com/questions/40557335/binary-to-string-text-in-python
         print(''.join(chr(int(decode[i * 8:i * 8 + 8], 2)) for i in range(len(decode) // 8)))
+    input("Press any key...")
 elif isDecode.casefold() == "e":
     def set_old():
         return input("Are you using the old system? (Right = 00, Left = 01, Normal = 10, Up = 11) Or the new system ("
